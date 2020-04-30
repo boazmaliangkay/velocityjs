@@ -39,8 +39,7 @@ function callMenu(){
         stagger: 250
     });
     $("#menu ul li a").click(function(){
-        $(this).parent("li").addClass("active");
-        $(this).parent("li").siblings().removeClass("active");
+        $(this).parent("li").addClass("active").siblings().removeClass("active");
     });
 }
 
