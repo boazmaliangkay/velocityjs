@@ -38,6 +38,10 @@ function callMenu(){
     $("#menu ul li").velocity("transition.slideLeftIn",{
         stagger: 250
     });
+    $("#menu ul li a").click(function(){
+        $(this).parent("li").addClass("active");
+        $(this).parent("li").siblings().removeClass("active");
+    });
 }
 
 $(document).ready(function(){
